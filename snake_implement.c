@@ -12,10 +12,9 @@ const char *TIPS[] = {"ио:<Up>", "об:<Down>", "вС:<Left>", "ср:<Right>",
 enum {
     Up = 72, Right = 77, Down = 80, Left = 75, 
     star_sign = 99, Space = 32, Esc = 27,        // keyboard button
-    TRUE_ = 1
+    TRUE_ = 1, dir_sign = -32, FALSE_ = 0
 };
 
-const int dir_sign = -32, FALSE_ = 0;
 int interval_time = 300;
 int mainBoard[22][22];          // on logic
 int score;
