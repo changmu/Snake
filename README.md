@@ -1,6 +1,11 @@
-# ±àÒë·½Ê½
-g++ snake_implement.c snake_main.c -o GAME
+# è´ªåƒè›‡ç»ƒæ‰‹é¡¹ç›®
 
-# Ì°³ÔÉß(Snake) Version 
-ver. 0.1 (2015.04.01)<br>
-    ÊµÏÖÁË×î»ù±¾µÄ¹¦ÄÜ
+## windows cç‰ˆæœ¬ç¼–è¯‘è¿è¡Œ
+cd c
+g++ snake_implement.c snake_main.c -o GAME
+./GAME
+
+## tsç‰ˆæœ¬è¿è¡Œ
+cd ts
+npm install
+npm run dev
