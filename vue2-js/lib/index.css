@@ -1,0 +1,61 @@
+
+#app {
+    display: flex;
+    width: 760px;
+}
+
+#grid-board {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+}
+
+.grid-item {
+    flex: 1;
+    border: 1px solid gray;
+    width: 28px;
+    height: 28px;
+    background-color: #BDBDBD;
+}
+
+#info-board {
+    flex: 1;
+    border: 1px solid black;
+    border-left: 0;
+}
+
+#version-info {
+    margin-bottom: 5px;
+}
+
+#info-board div {
+    margin: 10px;
+}
+
+#info-board #level {
+    margin-top: 10px;
+}
+
+#info-board #game-over-info {
+    color: red;
+    font-weight: bold;
+}
+
+.grid-space {
+    background-color: #BDBDBD;
+}
+
+.grid-snake-head {
+    background-color: pink;
+    /* border-radius: 60px; */
+}
+.grid-snake-body {
+    background-color: yellow;
+}
+.grid-snake-dead {
+    background-color: red;
+}
+.grid-apple {
+    background-color: blue;
+}

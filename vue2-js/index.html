@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snake</title>
+
+    <!-- 引入css -->
+    <link href="./lib/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- 页面布局 -->
+    <div id="app" @click='handleAppClick'>
+        <div id="grid-board">
+            <div v-for="(item1,i) in grids">
+                <div class="grid-item" v-bind:class="grids[i][j].style" v-for="(item2,j) in item1">
+                    <!-- {{i+","+j}} -->
+                </div>
+            </div>
+        </div>
+
+        <div id="info-board">
+            <div id="score"> 
+                分数: <span v-text="score"></span>
+            </div>
+            <div id="level">
+                关卡: <span v-text="getLevel"></span>
+            </div>
+            <div id="help-info"> 
+                游戏帮助:
+                <div>使用空格开始或暂停</div>
+            </div>
+            <div id="game-over-info" v-if="isGameOver">游戏结束，你的分数是:{{score}}，空格重新开始</div>
+            <div id="version-info" v-text="version"></div>
+        </div>
+    </div>
+
+    <!-- 引入js -->
+    <script src="./lib/vue.js"></script>
+    <script src="./lib/index.js"></script>
+</body>
+</html>
