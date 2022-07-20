@@ -14,7 +14,7 @@
     <div id="app" @click='handleAppClick'>
         <div id="grid-board">
             <div v-for="(item1,i) in grids">
-                <div class="grid-item" v-bind:class="grids[i][j].style" v-for="(item2,j) in item1">
+                <div class="grid-item" v-bind:class="grids[i][j].image.png" v-for="(item2,j) in item1">
                     <!-- {{i+","+j}} -->
                 </div>
             </div>
